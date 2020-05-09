@@ -1,45 +1,45 @@
 {
-  "name": "tinro",
-  "version": "0.2.4",
-  "description": "tinro is a tiny declarative router for Svelte",
-  "main": "dist/tinro.js",
-  "module": "dist/tinro.es.js",
-  "browser": "dist/tinro.browser.js",
-  "svelte": "cmp/index.js",
-  "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -w -c tests/rollup.dev.config.js",
-    "compare": "rollup -c tests/rollup.compare.config.js",
-    "test:build": "rollup -c tests/rollup.dev.config.js --environment NODE_ENV:test",
-    "test": "npm run test:build && node tests | tap-diff"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AlexxNB/tinro.git"
-  },
-  "keywords": [
-    "svelte-router",
-    "router",
-    "svelte"
-  ],
-  "author": "Alexey Schebelev",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/AlexxNB/tinro/issues"
-  },
-  "homepage": "https://github.com/AlexxNB/tinro#readme",
-  "dependencies": {},
-  "devDependencies": {
-    "@detools/tap-diff": "^0.2.2",
-    "@rollup/plugin-node-resolve": "^7.1.1",
-    "port-authority": "^1.0.5",
-    "puppeteer": "^3.0.0",
-    "rollup": "^2.0.0",
-    "rollup-plugin-livereload": "^1.0.0",
-    "rollup-plugin-svelte": "^5.0.3",
-    "rollup-plugin-terser": "^5.2.0",
-    "sirv-cli": "^0.4.4",
-    "svelte": "^3.0.0",
-    "tape-modern": "^1.1.2"
-  }
+	"name": "@ronthecookie/tinro",
+	"version": "0.2.4",
+	"description": "custom version of tinro, the svelte router to ignore /api routes",
+	"main": "dist/tinro.js",
+	"module": "dist/tinro.es.js",
+	"browser": "dist/tinro.browser.js",
+	"svelte": "cmp/index.js",
+	"scripts": {
+		"build": "rollup -c",
+		"dev": "rollup -w -c tests/rollup.dev.config.js",
+		"compare": "rollup -c tests/rollup.compare.config.js",
+		"test:build": "rollup -c tests/rollup.dev.config.js --environment NODE_ENV:test",
+		"test": "npm run test:build && node tests | tap-diff"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/AlexxNB/tinro.git"
+	},
+	"keywords": [
+		"svelte-router",
+		"router",
+		"svelte"
+	],
+	"author": "Alexey Schebelev",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/AlexxNB/tinro/issues"
+	},
+	"homepage": "https://github.com/AlexxNB/tinro#readme",
+	"dependencies": {},
+	"devDependencies": {
+		"@detools/tap-diff": "^0.2.2",
+		"@rollup/plugin-node-resolve": "^7.1.1",
+		"port-authority": "^1.0.5",
+		"puppeteer": "^3.0.0",
+		"rollup": "^2.0.0",
+		"rollup-plugin-livereload": "^1.0.0",
+		"rollup-plugin-svelte": "^5.0.3",
+		"rollup-plugin-terser": "^5.2.0",
+		"sirv-cli": "^0.4.4",
+		"svelte": "^3.0.0",
+		"tape-modern": "^1.1.2"
+	}
 }
