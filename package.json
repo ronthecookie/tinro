@@ -1,5 +1,5 @@
 {
-	"name": "@ronthecookie/tinro",
+	"name": "tinro",
 	"version": "0.2.4",
 	"description": "custom version of tinro, the svelte router to ignore /api routes",
 	"main": "dist/tinro.js",
