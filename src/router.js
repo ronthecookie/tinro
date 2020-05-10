@@ -53,7 +53,7 @@ function getLocationFromHash() {
 function aClickListener(go) {
 	const h = (e) => {
 		const a = e.target.closest("a[href]");
-		if (a && /^\/(?:(?!api)[\w/]+)?/.test(a.getAttribute("href"))) {
+		if (a && /^\/(?!api)(?:[\w/]+)?/.test(a.getAttribute("href"))) {
 			e.preventDefault();
 			go(a.getAttribute("href"));
 		}
